@@ -1,10 +1,10 @@
 # [level 1] 숫자 문자열과 영단어 - 81301 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/81301) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/81301?language=python3) 
 
 ### 성능 요약
 
-메모리: 78 MB, 시간: 0.04 ms
+메모리: 10.5 MB, 시간: 0.02 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 11월 3일 0:27:1
+2024년 10월 13일 13:55:20
 
 ### 문제 설명
 
