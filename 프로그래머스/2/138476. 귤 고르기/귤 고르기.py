@@ -1,15 +1,13 @@
 from collections import Counter
 
 def solution(k, tangerine):
-    tan_type = 0
-    tan_cnt = 0
-    
     type_cnt = Counter(tangerine)
-    type_cnt = sorted(type_cnt.values(), reverse=True)
+    sorted_counts = sorted(type_cnt.items(), key=lambda x: x[1], reverse=True)
     
-    for cnt in type_cnt:
-        tan_cnt += cnt
-        tan_type += 1
-        if tan_cnt >= k:
-            break
-    return tan_type
+    total = 0
+    for i, (size, count) in enumerate(sorted_counts, 1):
+        total += count
+        if total >= k:
+            return i
+    
+    return len(sorted_counts)
