@@ -1,0 +1,10 @@
+function solution(array, commands) {
+    var answer = [];
+    for(let i = 0; i<commands.length; i++){
+        const [start, end, k] = commands[i];
+        let sliced = array.slice(start-1, end);
+        sliced.sort((a, b) => a - b);
+        answer.push(sliced[k-1]);
+    }
+    return answer;
+}
