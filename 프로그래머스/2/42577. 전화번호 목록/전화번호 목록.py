@@ -1,18 +1,16 @@
 def solution(phone_book):
-    answer = True
-    phone_search = {}
-    
-    for address in phone_book:
-        phone_search[address] = 1
-    
-    for address in phone_book:
+    hash_map = {}
+
+    for phone in phone_book:
+        hash_map[phone] = 1
+
+    for phone in phone_book:
         temp = ""
-        if not answer:
-            break
-        for number in address:
-            temp += number
-            if temp in phone_search and temp != address:
-                answer = False
-                break
-    
-    return answer
+
+        for num in phone:
+            temp += num
+
+            if temp in hash_map and temp != phone:
+                return False
+
+    return True
