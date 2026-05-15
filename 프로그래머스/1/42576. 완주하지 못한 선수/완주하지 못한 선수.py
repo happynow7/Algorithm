@@ -1,11 +1,15 @@
-from collections import Counter
-
 def solution(participant, completion):
-    answer = ''
+    #딕셔너리 생성
+    players = {} 
     
-    participant_counter = Counter(participant)
-    completion_counter = Counter(completion)
-    incomplete = participant_counter - completion_counter
-    answer = list(incomplete.elements())[0]
-    
-    return answer
+    for p in participant:
+        if p in players:
+            players[p] += 1
+        else:
+            players[p] =1
+    for c in completion:
+        players[c] -= 1
+        
+    for answer in players:
+        if players[answer] > 0:
+            return answer
