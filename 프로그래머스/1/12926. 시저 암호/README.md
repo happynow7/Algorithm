@@ -1,10 +1,10 @@
 # [level 1] 시저 암호 - 12926 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12926) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12926?utm_source=chatgpt.com) 
 
 ### 성능 요약
 
-메모리: 10.4 MB, 시간: 3.36 ms
+메모리: 9.21 MB, 시간: 0.90 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 07월 04일 23:35:36
+2026년 05월 16일 20:29:38
 
 ### 문제 설명
 
